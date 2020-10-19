@@ -6,9 +6,9 @@ function setup() {
   createCanvas(800,400);
   speed = Math.random(20, 40)
 
-  car = createSprite(400, 200, 50, 50);
+  car = createSprite(100, 200, 50, 50);
   car.velocityX = speed
-  wall = createSprite(400, 200, 20, 100);
+  wall = createSprite(800, 200, 20, 100);
 }
 
 function draw() {
