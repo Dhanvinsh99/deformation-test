@@ -11,7 +11,7 @@ function setup() {
   car.velocityX = speed ** -1;
   car.debug = true;
 
-  wall = createSprite(800, 200, 20, 100);
+  wall = createSprite(800, 200, 50, 100);
   wall.debug = true;
 }
 
@@ -24,10 +24,10 @@ function draw() {
     if(deformation > 180 ){
       car.shapeColor = color(255, 0, 0);
     }
-    if(deformation === 180){
+    if(deformation >= 100 && deformation === 180){
       car.shapeColor =color(200, 0, 250);
     }
-    if (deformation < 180){
+    if (deformation < 100){
       car.shapeColor = color(0, 0, 255);
     }
   }
